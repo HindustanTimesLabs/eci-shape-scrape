@@ -17,7 +17,8 @@ walker.on("file", function(root, stat, next) {
 });
 
 walker.on("end", function() {
-  files.forEach(function(d, i){
+  files.forEach(function(d){
+    console.log("Converting " + d);
     fs.createReadStream("zip/" + d).pipe(unzip.Extract({ path: "kml" }));
   });
 });

@@ -6,11 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Harry Stevens",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/HindustanTimesLabs/eci-shape-scrape.git"
+  },
   "license": "ISC",
   "dependencies": {
     "underscore": "^1.8.3",
     "unzip": "^0.1.11",
-    "walk": "^2.3.9"
+    "walk": "^2.3.9",
+    "togeojson": "^0.16.0",
+    "xmldom": "^0.1.27"
   }
 }

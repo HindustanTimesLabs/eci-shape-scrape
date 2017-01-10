@@ -41,10 +41,12 @@ list.forEach(function(d){
 })
 
 function r(d){
+
   var file = fs.createWriteStream("zip/" + d + ".zip");
   http.get("http://psleci.nic.in/kml/" + d + ".zip", function(response, err) {
 
     if (!err && response.statusCode == "200"){
+      console.log("Scraping " + d);
       response.pipe(file);
     }
 
